@@ -1,0 +1,257 @@
+/* Hedaer*/
+
+:root {
+  --main-backgraund-color: #e5e5e5;
+  --sec-backgraund-color: #f5f4fa;
+  --dark-backgraund-color: #2f303a;
+  --black-text-color: #212121;
+  --hover-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --grey-text-color: #757575;
+  --button-background-color: #f5f4fa;
+  --white-background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Roboto;
+}
+.page-header {
+  color: var(--black-text-color);
+  background-color: var(--white-background-color);
+}
+
+/* Логотип*/
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--hover-text-color);
+}
+.logo-color {
+  color: var(--black-text-color);
+}
+
+/* главное меню с контактами*/
+.site-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--black-text-color);
+}
+
+.header-contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--grey-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--hover-text-color);
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus {
+  color: var(--hover-text-color);
+}
+
+/*Секция Герой*/
+
+.hero {
+  background-color: var(--dark-backgraund-color);
+}
+
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
+
+.hero-button {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  background: var(--hover-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-text-color);
+  font-family: inherit;
+}
+
+/*Приимущества*/
+.advantages {
+  background-color: var(--main-backgraund-color);
+}
+
+.invisible-title {
+  display: none;
+}
+
+.advantages h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--black-text-color);
+}
+.advantages p {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--grey-text-color);
+}
+
+/*наши работы*/
+.activity {
+  background-color: var(--main-backgraund-color);
+}
+
+.activity h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-text-color);
+}
+
+/*Наша команда*/
+.comands {
+  background-color: var(--sec-backgraund-color);
+}
+
+.comands h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-text-color);
+}
+
+.comands h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--black-text-color);
+}
+.comands p {
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--grey-text-color);
+}
+
+/*Футер*/
+.page-footer {
+  background-color: var(--dark-backgraund-color);
+}
+
+.logo-color-footer {
+  color: var(--white-text-color);
+}
+
+.page-footer p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--white-text-color);
+}
+
+.contacts-foter a {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*Портфолио кнопки*/
+
+.our-projects {
+  background-color: var(--main-backgraund-color);
+}
+.portfolio-button {
+  background-color: var(--sec-backgraund-color);
+
+  font-family: inherit;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  *letter-spacing: 0.03em;
+
+  color: var(--black-text-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--hover-text-color);
+  color: var(--white-text-color);
+}
+.project-view h2 {
+  background: var(--white-background-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--black-text-color);
+}
+
+.project-view p {
+  background-color: var(--white-background-color);
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: var(--grey-text-color);
+}
+
