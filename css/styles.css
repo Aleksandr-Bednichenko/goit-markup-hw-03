@@ -14,27 +14,48 @@
 
 a {
   text-decoration: none;
+  
 }
+
 
 li {
   list-style: none;
+}
+a,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 body {
   font-family: Roboto;
 }
-.page-header {
-  color: var(--black-text-color);
-  background-color: var(--white-background-color);
+
+.conteiner {
+  background-color: tomato;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Логотип*/
 .logo {
+ 
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+ 
 
   color: var(--hover-text-color);
 }
@@ -43,6 +64,28 @@ body {
 }
 
 /* главное меню с контактами*/
+
+.page-header {
+
+  color: var(--black-text-color);
+  background-color: var(--white-background-color);
+  
+}
+
+.nav {
+ 
+  
+}
+
+.site-nav{
+  
+}
+
+.header-contacts{
+  display: flex;
+  /*align-items:flex-end;*/
+}
+
 .site-nav a {
   font-weight: 500;
   font-size: 14px;
@@ -254,4 +297,3 @@ body {
 
   color: var(--grey-text-color);
 }
-
