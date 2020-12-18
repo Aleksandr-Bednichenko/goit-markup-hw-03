@@ -58,8 +58,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
- 
-
   color: var(--hover-text-color);
 }
 .logo-color {
@@ -73,16 +71,8 @@ body {
 }
  
 .page-header {
-
-
-  color: var(--black-text-color);
-  background-color:var(--white-background-color);
-  
-  
-}
-
-.nav{
-  display: flex;
+ color: var(--black-text-color);
+ background-color:var(--white-background-color); 
 }
 
 .site-nav{
@@ -92,15 +82,18 @@ body {
 .site-nav>.item:not(:last-child){
 margin-right: 50px;
 }
+.header-contacts>.contact-item:not(:last-child){
+  margin-right: 50px;
+  }
 .header-links{
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+/*
 .mail-link{
    margin-right: 50px;
-}
+}*/
 
 .header-contacts{
   display: flex;
@@ -180,6 +173,11 @@ margin-right: 50px;
   border-radius: 4px;
   color: var(--white-text-color);
   font-family: inherit;
+}
+.hero-button:hover,
+.hero-button:focus{
+  background-color: var(--white-background-color);
+  color: var(--hover-text-color);
 }
 
 /*Приимущества*/
@@ -320,13 +318,31 @@ margin-right: 50px;
 
 /*Футер*/
 .page-footer {
-  display: block;
-  background-color: var(--dark-backgraund-color);
+    background-color: var(--dark-backgraund-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
   }
-  {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
+  .contacts>.contacts-element:not(:last-child){
+    margin-bottom: 9px; }
+
+  .logo-footer{
+    display: block;
+   margin-bottom: 20px;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+   
+   color: var(--hover-text-color);
+  }
+
+
 
 .logo-color-footer{
   color:var(--white-text-color);
