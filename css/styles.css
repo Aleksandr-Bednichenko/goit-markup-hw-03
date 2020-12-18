@@ -184,12 +184,32 @@ margin-right: 50px;
 
 /*Приимущества*/
 .advantages {
+  display: flex;
   background-color: var(--main-backgraund-color);
 }
 
-.invisible-title {
-  display: none;
+.advantages-elements{
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
+
+.advantages-elements>.advantages-element:not(:last-child){
+  margin-right: 30px;
+  }
+
+.invisible-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  ...
+}
+.name{
+  margin-bottom: 10px;
+}
+
 
 .advantages h3 {
   font-weight: 700;
@@ -211,8 +231,22 @@ margin-right: 50px;
 
 /*наши работы*/
 .activity {
+  display: flex;
   background-color: var(--main-backgraund-color);
 }
+
+.activity-titel{
+  margin-bottom: 50px;
+}
+
+.activity-variants{
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.activity-variants>.activity-variant:not(:last-child){
+  margin-right: 30px;
+  }
 
 .activity h2 {
   font-weight: 700;
@@ -225,11 +259,38 @@ margin-right: 50px;
 }
 
 /*Наша команда*/
-.comands {
+.comand {
+  display: flex;
   background-color: var(--sec-backgraund-color);
+  padding-bottom: 94px;
 }
 
-.comands h2 {
+.comand-titel{
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.comand-members{
+  display: flex;
+}
+
+.comand-members>.comand-member:not(:last-child){
+  margin-right: 30px;
+  }
+
+  .photograph{
+    margin-bottom: 30px;
+  }
+
+  .fuul-name{
+    margin-bottom: 10px;
+  }
+
+  .comand-position{
+    margin-bottom: 30px;
+  }
+
+.comand h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -239,7 +300,7 @@ margin-right: 50px;
   color: var(--black-text-color);
 }
 
-.comands h3 {
+.comand h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -248,7 +309,7 @@ margin-right: 50px;
 
   color: var(--black-text-color);
 }
-.comands p {
+.comand p {
   font-size: 16px;
   line-height: 1.19;
 
@@ -259,11 +320,16 @@ margin-right: 50px;
 
 /*Футер*/
 .page-footer {
+  display: block;
   background-color: var(--dark-backgraund-color);
+  }
+  {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 
-
-.logo-color-footer {
-  color: var(--white-text-color);
+.logo-color-footer{
+  color:var(--white-text-color);
 }
 
 .page-footer p {
