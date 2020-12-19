@@ -1,8 +1,7 @@
 /* Hedaer*/
 
 :root {
-  --main-backgraund-color: #e5e5e5;
-  --sec-backgraund-color: #f5f4fa;
+  --main-backgraund-color:#E5E5E5;
   --dark-backgraund-color: #2f303a;
   --black-text-color: #212121;
   --hover-text-color: #2196f3;
@@ -39,7 +38,7 @@ body {
 
 .conteiner {
 
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;  
   padding-left: 15px;
@@ -131,10 +130,15 @@ margin-right: 50px;
   text-align: center;
 }
 
+.hero-sec{
+  padding-top: 200px; 
+  padding-bottom: 200px;
+}
+
 .hero-text {
   
   display: block;
-  padding-top: 200px;  
+   
   padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -150,14 +154,18 @@ margin-right: 50px;
 }
 
 .hero-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
 
-  margin-bottom: 200px;
+  
   cursor: pointer;
+  border: transparent; 
 
   font-weight: 700;
   font-size: 16px;
@@ -232,13 +240,16 @@ margin-right: 50px;
   background-color: var(--main-backgraund-color);
 }
 
+.activity-sec{
+  margin-bottom: 94px;
+}
+
 .activity-titel{
   margin-bottom: 50px;
 }
 
 .activity-variants{
-  display: flex;
-  margin-bottom: 94px;
+  display: flex;  
 }
 
 .activity-variants>.activity-variant:not(:last-child){
@@ -259,36 +270,18 @@ margin-right: 50px;
 
 .comand {
   display: flex;
-  background-color: var(--sec-backgraund-color);
-  padding-bottom: 94px;
+  background-color: var(--main-backgraund-color);
+  
 }
 
-.comand-titel{
+.comand-sec{
   margin-top: 94px;
+  padding-bottom: 94px; 
+}
+
+.comand-titel{  
   margin-bottom: 50px;
-}
 
-.comand-members{
-  display: flex;
-}
-
-.comand-members>.comand-member:not(:last-child){
-  margin-right: 30px;
-}
-
-.photograph{
-  margin-bottom: 30px;
-}
-
-.fuul-name{
-  margin-bottom: 10px;
-}
-
-.comand-position{
-  margin-bottom: 30px;
-}
-
-.comand h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -298,7 +291,24 @@ margin-right: 50px;
   color: var(--black-text-color);
 }
 
-.comand h3 {
+.comand-members{
+  display: flex;
+  /*padding-bottom: 30px;*/
+ 
+}
+
+.comand-members>.comand-member:not(:last-child){
+  margin-right: 30px;
+}
+
+.photograph{
+  display: block;
+  
+}
+
+.fuul-name{  
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -308,7 +318,14 @@ margin-right: 50px;
   color: var(--black-text-color);
 }
 
-.comand p {
+.background-titel{
+  background-color: var(--white-background-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.comand-position {
   font-size: 16px;
   line-height: 1.19;
 
@@ -320,12 +337,15 @@ margin-right: 50px;
 /*Футер*/
 
 .page-footer {
-    background-color: var(--dark-backgraund-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+  background-color: var(--dark-backgraund-color);
 }
-.contacts>.contacts-element:not(:last-child){
+
+.footer-sec{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts>.contact-element:not(:last-child){
   margin-bottom: 9px; 
 }
 
@@ -342,8 +362,6 @@ margin-right: 50px;
    
   color: var(--hover-text-color);
 }
-
-
 
 .logo-color-footer{
   color:var(--white-text-color);
@@ -379,8 +397,16 @@ margin-right: 50px;
   background-color:var(--main-backgraund-color);
 }
 
+.projects-sec{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .portfolio-button {
-  background-color: var(--sec-backgraund-color);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--main-backgraund-color);
  
 
   font-family: inherit;
@@ -410,8 +436,7 @@ margin-right: 50px;
 .filters-button{
   display: flex;
   justify-content:center;
-  padding-top: 94px;
-  margin-bottom: 34px;
+    margin-bottom: 34px;
 }
 
 /* портфлио проекты*/
@@ -419,20 +444,20 @@ margin-right: 50px;
 .projects-view{
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
-  
+    
 }
 
 .project-elements{
+  display: block;
   
-  width: calc((100% - 60) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
 
 .project-elements:nth-child(3n){
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .project-elements:nth-last-child(-n + 3){
@@ -445,27 +470,17 @@ margin-right: 50px;
 
 .project-titel{ 
   margin-bottom: 4px;
-}
 
-.portfolio-button:hover,
-.portfolio-button:focus {
-  background-color: var(--hover-text-color);
-  color: var(--white-text-color);
-}
-
-.project-view h2 { 
- 
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;  
+  line-height: 2;
 
   letter-spacing: 0.06em;
 
   color: var(--black-text-color);
 }
 
-.project-view p {
-  
+.project-type{
   font-size: 16px;
   line-height: 1.87;
 
@@ -474,8 +489,15 @@ margin-right: 50px;
   color: var(--grey-text-color);
 }
 
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--hover-text-color);
+  color: var(--white-text-color);
+}
+
 .background-end{
   background-color: var(--white-background-color);
   padding-top: 20px;
+  padding-left: 24px;
   padding-bottom: 20px;
 }
