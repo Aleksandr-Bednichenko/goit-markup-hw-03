@@ -1,7 +1,7 @@
 /* Hedaer*/
 
 :root {
-  --main-backgraund-color:#E5E5E5;
+ /*--main-backgraund-color:#E5E5E5;*/
   --dark-backgraund-color: #2f303a;
   --black-text-color: #212121;
   --hover-text-color: #2196f3;
@@ -128,9 +128,6 @@ margin-right: 50px;
 .hero {
   background-color: var(--dark-backgraund-color);
   text-align: center;
-}
-
-.hero-sec{
   padding-top: 200px; 
   padding-bottom: 200px;
 }
@@ -158,11 +155,10 @@ margin-right: 50px;
   text-align: center;
   text-decoration: none;
   
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   
   cursor: pointer;
   border: transparent; 
@@ -188,13 +184,15 @@ margin-right: 50px;
 
 .advantages {
   display: flex;
-  background-color: var(--main-backgraund-color);
+  background-color: var(--white-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-elements{
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+ /* margin-top: 94px;
+  margin-bottom: 94px;*/
 }
 
 .advantages-elements>.advantages-element:not(:last-child){
@@ -237,11 +235,8 @@ margin-right: 50px;
 
 .activity {
   display: flex;
-  background-color: var(--main-backgraund-color);
-}
-
-.activity-sec{
-  margin-bottom: 94px;
+  background-color: var(--white-background-color);
+  padding-bottom: 94px;
 }
 
 .activity-titel{
@@ -270,13 +265,10 @@ margin-right: 50px;
 
 .comand {
   display: flex;
-  background-color: var(--main-backgraund-color);
-  
-}
-
-.comand-sec{
-  margin-top: 94px;
+  background-color: var(--white-background-color);
+  padding-top: 94px;
   padding-bottom: 94px; 
+  
 }
 
 .comand-titel{  
@@ -292,9 +284,7 @@ margin-right: 50px;
 }
 
 .comand-members{
-  display: flex;
-  /*padding-bottom: 30px;*/
- 
+  display: flex; 
 }
 
 .comand-members>.comand-member:not(:last-child){
@@ -302,8 +292,7 @@ margin-right: 50px;
 }
 
 .photograph{
-  display: block;
-  
+  display: block;  
 }
 
 .fuul-name{  
@@ -338,9 +327,6 @@ margin-right: 50px;
 
 .page-footer {
   background-color: var(--dark-backgraund-color);
-}
-
-.footer-sec{
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -394,20 +380,21 @@ margin-right: 50px;
 }
 
 .our-projects {
-  background-color:var(--main-backgraund-color);
-}
-
-.projects-sec{
+  background-color:var(--white-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} 
 
 .portfolio-button {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  background-color: var(--main-backgraund-color);
- 
+  background-color: var(--button-background-color);
+
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px; 
 
   font-family: inherit;
 
@@ -437,6 +424,7 @@ margin-right: 50px;
   display: flex;
   justify-content:center;
     margin-bottom: 34px;
+ 
 }
 
 /* портфлио проекты*/
